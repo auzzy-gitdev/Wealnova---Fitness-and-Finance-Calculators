@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealnova | Finance Calculators | Compound Interest</title>
+  <link rel="icon" href="thumbnails/favicon.png" />
+  <link rel="stylesheet" href="Fin-tools-page.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap">
+</head>
+<body>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111" crossorigin="anonymous"></script>
+
+  <header class="header">
+    <div class="logo-container">
+
+      <div class="logo-title" onclick="window.location.href='Home.html'">WEALNOVA</div>
+      <div class="logo-title-p"> EXPLORE. CALCULATE. REFLECT.</div>
+      <div class="logo-title-m">EXPLORE. CALCULATE. REFLECT.</div>
+
+    </div>
+    <nav class="nav-links">
+      <a href="Blogs.html">Blogs</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header><br>
+
+  <nav class="breadcrumbs">
+    <a href="Home.html" style="color: black; text-decoration: none;"> Home </a> &gt;
+    <a href="Fin-tools-page.html" style="color: black; text-decoration: none;"> Finance Calculators </a>&gt;
+    <a href="" style="color: green; text-decoration: none;"> Compound Interest Calculator </a>
+  </nav><br>
+    <div class="define">
+      <strong style="color: green;">Watch your money grow over time with this Compound Interest Calculator.</strong> 
+      <p>By entering your initial investment, interest rate, time period, and contribution frequency, you can see how your savings or 
+        investments will build up.</p>
+      <p>Compound interest helps your money earn interest on both the principal and the accumulated interest — making it a powerful tool 
+        for long-term wealth creation.</p>
+      <p>Learn more on <a href="https://en.wikipedia.org/wiki/Compound_interest">Wikipedia</a></p>
+    </div>  
+  <div class="container">
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="calculator">
+
+      <h2 class = "main-title-fin1">Compound Interest Calculator</h2>
+      <p></p>
+      <p></p>
+      <label for="pamt">Principal Amount :</label>
+      <input type="number" id="pamt" placeholder="e.g. 10000">
+      <p></p>      
+      <label for="aint">Annual Interest Rate :</label>
+      <input type="number" id="aint" placeholder="e.g. 6.5">
+      <p></p>
+      <label for="tper" class="block text-sm font-medium text-gray-700 mb-1">Tenure :</label><br>
+      <input type="number" id="tper" placeholder="5">
+
+      <select id="fin-unit"
+        class="block w-40 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm px-2 py-1">
+        <option value="">Select Unit</option>
+        <option value="mons">Month(s)</option>
+        <option value="yrs">Year(s)</option>
+      </select>
+
+      <p></p>
+      <p></p>
+      <label for="comfre" class="block text-sm font-medium text-gray-700 mb-1">Compounding Frequency :</label>
+      <p></p>
+      <select id="comfre"
+        class="block w-40 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm px-2 py-1">
+        <option value="">Select Frequency</option>
+        <option value="ann">Annually</option>
+        <option value="hyr">Half-yearly</option>
+        <option value="qua">Quarterly</option>
+        <option value="mon">Monthly</option>
+      </select>
+      <p></p>
+      <p></p>
+      
+
+      <button onclick="calculateCI()">Calculate</button><br>
+      <p id="ci1-result" class="result-bar"></p>
+      <p id="ci2-result" class="result-bar"></p>
+
+
+    </div>
+
+    <p class="tcpp-m" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+      Privacy Policy</a>.</p>
+
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="add">
+      
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+  </div>
+  <script src="Script.js"></script>
+  <br><br><br>
+  <p class="tcpp-p" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+      Privacy Policy</a>.</p>
+  <br><br><br>
+
+
+  <div class="rel-link">
+    <h1 class="Related" >────────── &nbsp;&nbsp;  Related Calculators &nbsp;&nbsp; ──────────</h1><br>
+    <button class = "each-tool" onclick="window.location.href ='SIPCalc.html'">SIP Calculator</button>
+    <button class = "each-tool-01" onclick="window.location.href ='GBICalc.html'">Goal-Based Investment Calculator</button>
+    <button class = "each-tool" onclick="window.location.href ='LTCalc.html'">Loan Tenure Calculator</button><br>
+  </div>
+  <script src="Cookies.js"></script>
+</body>
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Wealnova. All rights reserved
+  </footer>
+</html>

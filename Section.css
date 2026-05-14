@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: scroll;
+}
+
+.logo-title {
+  background-image: url(thumbnails/logo-title-clk.png);
+  background-size: cover;
+  padding-left: 285px;
+  padding-top: 60px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.background {
+  position: fixed;
+  background: linear-gradient(140deg, rgb(3, 131, 31), rgb(54, 159, 168));
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+header {
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.bgbody {
+  background-color: white;
+}
+
+.fbody {
+  margin: 30px;
+  font-size: 35px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.main-title {
+  
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  font-size: 30px;
+  border: 5px solid white;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 3px;
+  padding-top: 5px;
+  font-weight: bold;
+}

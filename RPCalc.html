@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealnova | Fitness Calculators | Running Pace Calculator</title>
+  <link rel="icon" href="thumbnails/favicon.png" />
+  <link rel="stylesheet" href="Fit-tools-page.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap">
+
+</head>
+<body>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111" crossorigin="anonymous"></script>
+
+  <header class="header">
+    <div class="logo-container">
+
+      <div class="logo-title" onclick="window.location.href='Home.html'">WEALNOVA</div>
+      <div class="logo-title-p"> EXPLORE. CALCULATE. REFLECT.</div>
+      <div class="logo-title-m">EXPLORE. CALCULATE. REFLECT.</div>
+
+    </div>
+    <nav class="nav-links">
+      <a href="Blogs.html">Blogs</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header><br>
+
+  <nav class="breadcrumbs">
+    <a href="Home.html" style="color: black; text-decoration: none;"> Home </a> &gt;
+    <a href="Fit-tools-page.html" style="color: black; text-decoration: none;"> Fitness Calculators </a>&gt;
+    <a href="" style="color: green; text-decoration: none;"> Running Pace Calculator </a>
+  </nav><br>
+    <div class="define">
+      <strong style="color: green;">Track and improve your running performance with this Running Pace Calculator. </strong> 
+      <p>Whether you’re training for a 5K, half-marathon, or just running to stay fit, this tool helps you calculate your pace per 
+        kilometer or mile based on your total time and distance. </p>
+      <p>It’s perfect for runners looking to set goals, plan workouts, or monitor progress over time. Knowing your pace helps you train 
+        smarter and race more efficiently.</p>
+      <p>Learn more on <a href="https://en.wikipedia.org/wiki/Running">Wikipedia</a></p>
+    </div>  
+  <div class="container">
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    <div class="calculator">
+
+      <h2 class = "main-title-bmi">Running Pace Calculator</h2>
+
+      <select id="km-ml" class="km-ml"
+        class="block w-40 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm px-2 py-1">
+        <option value="">Select Pace Unit</option>
+        <option value="kilo">Minutes/Kilometer</option>
+        <option value="mile">Minutes/Mile</option>
+
+      </select>
+      <p></p>
+      
+      <label for="time">Time :</label>
+      <input type="number" id="time" placeholder="e.g. 25">
+
+      <label for="dist">Distance :</label>
+      <input type="number" id="dist" placeholder="e.g. 5">
+
+      <button onclick="calculateRPC()">Calculate</button><br>
+      <p id="rpc-result" class="result-bar"></p>
+      <p></p>
+      <p></p>
+
+      
+
+      <p class="footer-t"> For Reference </p>
+      <p></p>
+      <p></p>
+      <p class="footer"> | Please enter the values according to the unit selected for correct results.</p>
+      <p class="footer"> | Only min/km and min/mile are shown as options as they are considered the common ones.</p>
+      <p class="footer"> | Pace : Time taken per unit distance</p>
+      
+    </div>
+
+    <p class="tcpp-m" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+      Privacy Policy</a>.</p>
+
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="add">
+      
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+  <script src="Script.js"></script>
+  <br><br><br>
+  <p class="tcpp-p" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+    Privacy Policy</a>.</p>
+
+  <div class="rel-link">
+    <h1 class="Related" >────────── &nbsp;&nbsp;  Related Calculators &nbsp;&nbsp; ──────────</h1><br>
+    <button class = "each-tool" onclick="window.location.href='THRCalc.html'">Target Heart Rate Calculator</button>
+    <button class = "each-tool" onclick="window.location.href='VO2Calc.html'">VO2 Max Calculator</button>
+    <button class = "each-tool" onclick="window.location.href='1RMCalc.html'">1RM (One Rep Max) Calculator</button>
+  </div>
+  <script src="Cookies.js"></script>
+</body>
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Wealnova. All rights reserved
+  </footer>
+</html>

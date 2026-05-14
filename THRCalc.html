@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealnova | Fitness Calculators | Target Heart Rate</title>
+  <link rel="icon" href="thumbnails/favicon.png" />
+  <link rel="stylesheet" href="Fit-tools-page.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap">
+
+</head>
+<body>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111" crossorigin="anonymous"></script>
+
+  <header class="header">
+    <div class="logo-container">
+
+      <div class="logo-title" onclick="window.location.href='Home.html'">WEALNOVA</div>
+      <div class="logo-title-p"> EXPLORE. CALCULATE. REFLECT.</div>
+      <div class="logo-title-m">EXPLORE. CALCULATE. REFLECT.</div>
+
+    </div>
+    <nav class="nav-links">
+      <a href="Blogs.html">Blogs</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header><br>
+
+  <nav class="breadcrumbs">
+    <a href="Home.html" style="color: black; text-decoration: none;"> Home </a> &gt;
+    <a href="Fit-tools-page.html" style="color: black; text-decoration: none;"> Fitness Calculators </a>&gt;
+    <a href="" style="color: green; text-decoration: none;"> Target Heart Rate Calculator </a>
+  </nav><br>
+    <div class="define">
+      <strong style="color: green;">Stay in the optimal zone during workouts with this Target Heart Rate Calculator.</strong> 
+      <p>Your target heart rate helps you train smarter by showing the ideal pulse range for burning fat, improving endurance, or 
+        boosting cardiovascular health. </p>
+      <p>Based on your age and exercise intensity, this calculator helps you find your best heart rate zone for safe and effective 
+        workouts.</p>
+      <p>Learn more on <a href="https://en.wikipedia.org/wiki/Heart_rate">Wikipedia</a></p>
+    </div>  
+  <div class="container">
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    <div class="calculator" style="max-height: 1200px;">
+
+      <h2 class = "main-title-bmi">Target Heart Rate Calculator</h2>
+      
+      <p></p>
+      <label for="age">Age :</label>
+      <input type="number" id="age" placeholder="e.g. 25">
+
+      <p></p>
+
+      <label for="tdee">Resting Heart Rate (RHR) :</label>
+      <input type="number" id="rhr" placeholder="e.g. 60">
+
+      <p></p>
+
+      <label for="fgoal" class="block text-sm font-medium text-gray-700 mb-1">Desired Workout Intensity :</label>
+      <p></p>
+      <select id="fgoal"
+        class="block w-40 rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 text-sm px-2 py-1">
+        <option value="">Select Intensity</option>
+        <option value="vlight">Very light</option>
+        <option value="light">Light</option>
+        <option value="mod">Moderate (Aerobic)</option>
+        <option value="hard">Hard (Anaerobic)</option>
+        <option value="maxm">Maximum Effort</option>
+        
+      </select>
+      <p></p>
+
+      <button onclick="calculateTHR()">Calculate</button><br>
+      <p id="thr-result" class="result-bar"></p>
+      <p></p>
+      <p></p>
+
+      
+
+      <p class="footer-t"> For Reference </p>
+      <p></p>
+      <p></p>
+      <p class="footer"> | Very Light : 60 - 70 % Intensity</p>
+      <p class="footer"> | Light : 70 - 80 % Intensity</p>
+      <p class="footer"> | Moderate : 70 - 80 % Intensity</p>
+      <p class="footer"> | Hard : 80 - 90 % Intensity</p>
+      <p class="footer"> | Maximum Effort: 90 - 100 % Intensity </p>
+
+    </div>
+
+    <p class="tcpp-m" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+      Privacy Policy</a>.</p>
+
+    <div class="ad-col" style="max-width: 350px;">
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="add">
+      
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1486236179009111"
+        crossorigin="anonymous"></script>
+      <!-- Welnova-ad-vertical -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-1486236179009111"
+          data-ad-slot="3453205369"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+  <br><br><br>
+  <p class="tcpp-p" style="text-align: center;">By using Wealnova calculators, you agree to our <a href="TandC.html"> Terms & Conditions</a> and have read our <a href="Privacy.html">
+    Privacy Policy</a>.</p>
+
+  <div class="rel-link">
+    <h1 class="Related" >────────── &nbsp;&nbsp;  Related Calculators &nbsp;&nbsp; ──────────</h1><br>
+    <button class = "each-tool" onclick="window.location.href='1RMCalc.html'">1RM (One Rep Max) Calculator</button>
+    <button class = "each-tool" onclick="window.location.href='BFPCalc.html'">Body Fat Percentage Calculator</button>
+    <button class = "each-tool" onclick="window.location.href='RPCalc.html'">Running Pace Calculator</button><br>
+  </div>
+  <script src="Cookies.js"></script>
+</body>
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Wealnova. All rights reserved
+  </footer>
+</html>

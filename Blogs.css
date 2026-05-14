@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Section Styling */
+.blog-section {
+  padding: 1.5rem;
+}
+
+.containerb {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 600px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Blog Cards */
+.blog-card {
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.blog-buttons {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.blog-card .category {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.blog-card .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.blog-card .desc {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Gradient Themes */
+.blog-card.pink {
+  background: linear-gradient(to bottom right, #dc2580, #f43f5e);
+}
+
+.blog-card.green {
+  background: linear-gradient(to bottom right, #07aa74, #22c55e);
+}
+
+.blog-card.blue {
+  background: linear-gradient(to bottom right, #3b82f6, #6366f1);
+}
